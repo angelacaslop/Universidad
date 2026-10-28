@@ -1,0 +1,49 @@
+cabal-version:   3.12
+name:            Tarea6
+version:         0.1.0.0
+license:         NONE
+author:          --get
+maintainer:      .
+build-type:      Simple
+extra-doc-files:
+    CHANGELOG.md
+    README.md
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:
+        Tipos
+        Renderizar
+        IA
+        Fisica
+        Comportamiento
+        Colisiones
+        Mapas
+        RandomTanks
+    other-extensions: DeriveFunctor InstanceSigs
+    build-depends:
+        base ^>=4.18.3.0,
+        time ^>=1.12.2,
+        gloss,
+        gloss-juicy,
+        random,
+        GLUT
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+
+executable Tarea7
+    import:           warnings
+    main-is:          Main.hs
+    hs-source-dirs:   app
+    build-depends:
+        base ^>=4.18.3.0,
+        time ^>=1.12.2,
+        gloss,
+        gloss-juicy,
+        GLUT,
+        Tarea6
+    default-language: Haskell2010
