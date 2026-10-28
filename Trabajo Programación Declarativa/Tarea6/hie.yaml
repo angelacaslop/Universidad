@@ -1,0 +1,6 @@
+cradle:
+  cabal:
+    - path: "app"
+      component: "exe:Tarea5"
+    - path: "src"
+      component: "lib:Tarea5"

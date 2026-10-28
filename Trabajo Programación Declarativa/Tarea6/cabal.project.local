@@ -1,0 +1,2 @@
+package gloss
+    flags: +GLFW -GLUT
